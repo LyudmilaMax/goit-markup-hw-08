@@ -1,38 +1,81 @@
-.container-benefits {
-    display: flex;
+.benefits {
+  padding: 60px 0;
 
-    .benefits-menu {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-
-    .benefits-menu__item {
-        flex-basis: calc((100% - 90px) / 4);
-    }
-
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.benefits-menu__icon {
+@media screen and (min-width: 480px) {
+  .benefits__menu {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+
+.benefits__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: var(--background-btn);
+  border-radius: 4px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 270px;
-    height: 120px;
-    background-color: var(--background-btn);
-    border-radius: 4px;
+  }
 }
 
-.benefits-menu__title {
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: var(--main-text-color-dark);
-    margin-bottom: 10px;
+.benefits__title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-text-color-dark);
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
-.benefits-menu__text {
-    line-height: 1.71;
-    color: var(--secondary-text-color-dark);
+.benefits__text {
+  line-height: 1.71;
+  color: var(--secondary-text-color-dark);
 }
