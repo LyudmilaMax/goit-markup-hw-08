@@ -1,0 +1,33 @@
+.work-section {
+  padding-bottom: 94px;
+
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.work__img {
+  flex-basis: calc((100% - 60px) / 3);
+
+  .work__overlay-img {
+    position: relative;
+  }
+
+  .work__text-img {
+    position: absolute;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    width: 370px;
+    height: 70px;
+    padding: 27px 0px;
+    color: var(--secondary-text-color-light);
+    background: rgba(47, 48, 58, 0.8);
+    transform: translateY(-100%);
+  }
+}

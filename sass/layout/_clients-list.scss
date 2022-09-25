@@ -1,0 +1,28 @@
+.clients-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.clients-menu__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    color: var(--icon-color);
+    background-color: var(--background-basic);
+    transition: color var(--transition-color);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color-icon);
+            border-color: var(--accent-color-icon);
+        }
+}
+
+.clients-menu__icon {
+    fill: currentColor;
+}
