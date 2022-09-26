@@ -180,7 +180,7 @@
       </section>
 
       <!--Section 3  -->
-      <section class="work-section">
+      <!-- <section class="work-section">
         <div class="container">
           <h2 class="secondary-title">Чим ми займаємося</h2>
           <ul class="list work">
@@ -242,59 +242,73 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Section 4 -->
-      <!-- <section class="section team-section">
+      <section class="section team-section">
         <div class="container">
           <h2 class="secondary-title">Наша команда</h2>
           <ul class="list team">
             <li class="team__person-card">
-              <img src="./images/foto1.jpg" alt="Ігор Дем'яненко" width="270" />
+              <picture>
+                <source srcset="
+                          ./images/img-desktop/person1-desktop.webp    1x,
+                          ./images/img-desktop/person1-desktop@2x.webp 2x
+                        " media="(min-width: 1200px)" type="image/webp" />
+                <source srcset="
+                          ./images/img-desktop/person1-desktop.jpg    1x,
+                          ./images/img-desktop/person1-desktop@2x.jpg 2x
+                        " media="(min-width: 1200px)" />
+                <source srcset="
+                          ./images/img-tablet/person1-tablet.webp    1x,
+                          ./images/img-tablet/person1-tablet@2x.webp 2x
+                        " media="(min-width: 768px)" type="image/webp" />
+                <source srcset="
+                          ./images/img-tablet/person1-tablet.jpg    1x,
+                          ./images/img-tablet/person1-tablet@2x.jpg 2x
+                        " media="(min-width: 768px)" />
+      
+                <source srcset="
+                          ./images/img-mobile/person1-mobile.webp    1x,
+                          ./images/img-mobile/person1-mobile@2x.webp 2x
+                        " media="(max-width: 767px)" type="image/webp" />
+                <source srcset="
+                          ./images/img-mobile/person1-mobile.jpg    1x,
+                          ./images/img-mobile/person1-mobile@2x.jpg 2x
+                        " media="(max-width: 767px)" />
+                <img class="team__img" src="./images/img-mobile/person1-mobile.jpg" alt="Ігор Дем'яненко" />
+              </picture>
+      
               <div class="team__description-person-card">
                 <h3 class="team__name-person">Ігор Дем'яненко</h3>
-                <p class="team__profession-person" lang="en">Product Designer</p>
+                <p class="team__profession-person" lang="en">
+                  Product Designer
+                </p>
                 <ul class="social-list list">
                   <li>
                     <a href="" class="social-list__link">
-                      <svg
-                        lang="en"
-                        aria-label="instagram"
-                        class="social-list__icon"
-                      >
+                      <svg lang="en" aria-label="instagram" class="social-list__icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="" class="social-list__link">
-                      <svg
-                        lang="en"
-                        aria-label="twitter"
-                        class="social-list__icon"
-                      >
+                      <svg lang="en" aria-label="twitter" class="social-list__icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="" class="social-list__link">
-                      <svg
-                        lang="en"
-                        aria-label="facebook"
-                        class="social-list__icon"
-                      >
+                      <svg lang="en" aria-label="facebook" class="social-list__icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="" class="social-list__link">
-                      <svg
-                        lang="en"
-                        aria-label="linkedin"
-                        class="social-list__icon"
-                      >
+                      <svg lang="en" aria-label="linkedin" class="social-list__icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -302,53 +316,67 @@
                 </ul>
               </div>
             </li>
-
+      
             <li class="team__person-card">
-              <img src="./images/foto2.jpg" alt="Ольга Рєпіна" width="270" />
+              <picture>
+                <source srcset="
+                          ./images/img-desktop/person2-desktop.webp    1x,
+                          ./images/img-desktop/person2-desktop@2x.webp 2x
+                        " media="(min-width: 1200px)" type="image/webp" />
+                <source srcset="
+                          ./images/img-desktop/person2-desktop.jpg    1x,
+                          ./images/img-desktop/person2-desktop@2x.jpg 2x
+                        " media="(min-width: 1200px)" />
+                <source srcset="
+                          ./images/img-tablet/person2-tablet.webp    1x,
+                          ./images/img-tablet/person2-tablet@2x.webp 2x
+                        " media="(min-width: 768px)" type="image/webp" />
+                <source srcset="
+                          ./images/img-tablet/person2-tablet.jpg    1x,
+                          ./images/img-tablet/person2-tablet@2x.jpg 2x
+                        " media="(min-width: 768px)" />
+      
+                <source srcset="
+                          ./images/img-mobile/person2-mobile.webp    1x,
+                          ./images/img-mobile/person2-mobile@2x.webp 2x
+                        " media="(max-width: 767px)" type="image/webp" />
+                <source srcset="
+                          ./images/img-mobile/person2-mobile.jpg    1x,
+                          ./images/img-mobile/person2-mobile@2x.jpg 2x
+                        " media="(max-width: 767px)" />
+                <img class="team__img" src="./images/img-mobile/person2-mobile.jpg" alt="Ольга Рєпіна" />
+              </picture>
+      
               <div class="team__description-person-card">
                 <h3 class="team__name-person">Ольга Рєпіна</h3>
-                <p class="team__profession-person" lang="en">Frontend Developer</p>
+                <p class="team__profession-person" lang="en">
+                  Frontend Developer
+                </p>
                 <ul class="social-list list">
                   <li>
                     <a href="" class="social-list__link">
-                      <svg
-                        lang="en"
-                        aria-label="instagram"
-                        class="social-list__icon"
-                      >
+                      <svg lang="en" aria-label="instagram" class="social-list__icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="" class="social-list__link">
-                      <svg
-                        lang="en"
-                        aria-label="twitter"
-                        class="social-list__icon"
-                      >
+                      <svg lang="en" aria-label="twitter" class="social-list__icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="" class="social-list__link">
-                      <svg
-                        lang="en"
-                        aria-label="facebook"
-                        class="social-list__icon"
-                      >
+                      <svg lang="en" aria-label="facebook" class="social-list__icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="" class="social-list__link">
-                      <svg
-                        lang="en"
-                        aria-label="linkedin"
-                        class="social-list__icon"
-                      >
+                      <svg lang="en" aria-label="linkedin" class="social-list__icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -356,53 +384,65 @@
                 </ul>
               </div>
             </li>
-
+      
             <li class="team__person-card">
-              <img src="./images/foto3.jpg" alt="Микола Тарасов" width="270" />
+              <picture>
+                <source srcset="
+                          ./images/img-desktop/person3-desktop.webp    1x,
+                          ./images/img-desktop/person3-desktop@2x.webp 2x
+                        " media="(min-width: 1200px)" type="image/webp" />
+                <source srcset="
+                          ./images/img-desktop/person3-desktop.jpg    1x,
+                          ./images/img-desktop/person3-desktop@2x.jpg 2x
+                        " media="(min-width: 1200px)" />
+                <source srcset="
+                          ./images/img-tablet/person3-tablet.webp    1x,
+                          ./images/img-tablet/person3-tablet@2x.webp 2x
+                        " media="(min-width: 768px)" type="image/webp" />
+                <source srcset="
+                          ./images/img-tablet/person3-tablet.jpg    1x,
+                          ./images/img-tablet/person3-tablet@2x.jpg 2x
+                        " media="(min-width: 768px)" />
+      
+                <source srcset="
+                          ./images/img-mobile/person3-mobile.webp    1x,
+                          ./images/img-mobile/person3-mobile@2x.webp 2x
+                        " media="(max-width: 767px)" type="image/webp" />
+                <source srcset="
+                          ./images/img-mobile/person3-mobile.jpg    1x,
+                          ./images/img-mobile/person3-mobile@2x.jpg 2x
+                        " media="(max-width: 767px)" />
+                <img class="team__img" src="./images/img-mobile/person3-mobile.jpg" alt="Микола Тарасюк" />
+              </picture>
+      
               <div class="team__description-person-card">
                 <h3 class="team__name-person">Микола Тарасов</h3>
                 <p class="team__profession-person" lang="en">Marketing</p>
                 <ul class="social-list list">
                   <li>
                     <a href="" class="social-list__link">
-                      <svg
-                        lang="en"
-                        aria-label="instagram"
-                        class="social-list__icon"
-                      >
+                      <svg lang="en" aria-label="instagram" class="social-list__icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="" class="social-list__link">
-                      <svg
-                        lang="en"
-                        aria-label="twitter"
-                        class="social-list__icon"
-                      >
+                      <svg lang="en" aria-label="twitter" class="social-list__icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="" class="social-list__link">
-                      <svg
-                        lang="en"
-                        aria-label="facebook"
-                        class="social-list__icon"
-                      >
+                      <svg lang="en" aria-label="facebook" class="social-list__icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="" class="social-list__link">
-                      <svg
-                        lang="en"
-                        aria-label="linkedin"
-                        class="social-list__icon"
-                      >
+                      <svg lang="en" aria-label="linkedin" class="social-list__icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -410,53 +450,65 @@
                 </ul>
               </div>
             </li>
-
+      
             <li class="team__person-card">
-              <img src="./images/foto4.jpg" alt="Михайло Єрмаков" width="270" />
+              <picture>
+                <source srcset="
+                          ./images/img-desktop/person4-desktop.webp    1x,
+                          ./images/img-desktop/person4-desktop@2x.webp 2x
+                        " media="(min-width: 1200px)" type="image/webp" />
+                <source srcset="
+                          ./images/img-desktop/person4-desktop.jpg    1x,
+                          ./images/img-desktop/person4-desktop@2x.jpg 2x
+                        " media="(min-width: 1200px)" />
+                <source srcset="
+                          ./images/img-tablet/person4-tablet.webp    1x,
+                          ./images/img-tablet/person4-tablet@2x.webp 2x
+                        " media="(min-width: 768px)" type="image/webp" />
+                <source srcset="
+                          ./images/img-tablet/person4-tablet.jpg    1x,
+                          ./images/img-tablet/person4-tablet@2x.jpg 2x
+                        " media="(min-width: 768px)" />
+      
+                <source srcset="
+                          ./images/img-mobile/person4-mobile.webp    1x,
+                          ./images/img-mobile/person4-mobile@2x.webp 2x
+                        " media="(max-width: 767px)" type="image/webp" />
+                <source srcset="
+                          ./images/img-mobile/person4-mobile.jpg    1x,
+                          ./images/img-mobile/person4-mobile@2x.jpg 2x
+                        " media="(max-width: 767px)" />
+                <img class="team__img" src="./images/img-mobile/person4-mobile.jpg" alt="Михайло Єрмаков" />
+              </picture>
+      
               <div class="team__description-person-card">
                 <h3 class="team__name-person">Михайло Єрмаков</h3>
                 <p class="team__profession-person" lang="en">UI Designer</p>
                 <ul class="social-list list">
                   <li>
                     <a href="" class="social-list__link">
-                      <svg
-                        lang="en"
-                        aria-label="instagram"
-                        class="social-list__icon"
-                      >
+                      <svg lang="en" aria-label="instagram" class="social-list__icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="" class="social-list__link">
-                      <svg
-                        lang="en"
-                        aria-label="twitter"
-                        class="social-list__icon"
-                      >
+                      <svg lang="en" aria-label="twitter" class="social-list__icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="" class="social-list__link">
-                      <svg
-                        lang="en"
-                        aria-label="facebook"
-                        class="social-list__icon"
-                      >
+                      <svg lang="en" aria-label="facebook" class="social-list__icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="" class="social-list__link">
-                      <svg
-                        lang="en"
-                        aria-label="linkedin"
-                        class="social-list__icon"
-                      >
+                      <svg lang="en" aria-label="linkedin" class="social-list__icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -466,9 +518,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Section 5 -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="secondary-title">Постійні клієнти</h2>
           <ul class="list clients-menu">
@@ -553,7 +605,7 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
 
     <!-- Footer -->
     <!-- <footer class="footer-studio">
