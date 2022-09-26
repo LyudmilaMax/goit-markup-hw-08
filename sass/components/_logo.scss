@@ -4,7 +4,11 @@
     font-size: 26px;
     line-height: 1.19;
     color: #000000;
-    margin-right: 93px;
+   text-align: center;
+
+    @media screen and (min-width: 1200px) {
+         margin-right: 93px;
+    }
 
     .logo__part-web {
         color: var(--accent-color);
@@ -13,4 +17,6 @@
     .logo__part-studio {
         color: var(--secondary-text-color-light);
     }
+
+
 }

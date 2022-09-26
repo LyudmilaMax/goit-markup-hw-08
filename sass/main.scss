@@ -5,7 +5,7 @@
 @import "./base/section";
 @import "./base/container";
 
-// @import "./components/logo";
+@import "./components/logo";
 @import "./components/title.scss";
 // @import "./components/backdrop";
 // @import "./components/mobile-menu";
@@ -14,7 +14,7 @@
 
 // @import "./components/modal-btn-form";
 @import "./components/social-network-list";
-// @import "./components/footer-form";
+@import "./components/email-form";
 
 // @import "./layout/header";
 @import "./layout/hero";
@@ -24,4 +24,4 @@
 @import "./layout/clients-list";
 
 // @import "./layout/portfolio";
-// @import "./layout/footer";
+@import "./layout/footer";
