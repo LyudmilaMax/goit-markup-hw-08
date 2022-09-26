@@ -178,6 +178,67 @@ body {
   }
 }
 
+.backdrop {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 250ms ease, visibility 250ms ease;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 40px 40px;
+  background-color: var(--background-basic);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
+
+.modal-close-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  left: auto;
+  top: 8px;
+  right: 8px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.modal-close-btn .modal-close-icon {
+  fill: var(--icon-color-btn);
+}
+.modal-close-btn .modal-close-icon:hover, .modal-close-btn .modal-close-icon:focus {
+  fill: var(--accent-color-icon);
+}
+
 .modal-button {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -217,6 +278,157 @@ body {
   color: var(--secondary-text-color-light);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.form-modal-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color-dark);
+  margin-bottom: 12px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color var(--transition-color);
+}
+.modal-form-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+.modal-form-input:focus + .icon-form-modal {
+  fill: var(--accent-color);
+  transition: color var(--transition-color);
+}
+
+.modal-form-field-name {
+  display: block;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color-dark);
+  margin-bottom: 4px;
+}
+
+.modal-form-field {
+  margin-bottom: 10px;
+}
+
+.modal-form-input-wrapper {
+  position: relative;
+  display: block;
+}
+
+.icon-form-modal {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+.modal-form-message {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  outline: none;
+}
+.modal-form-message:focus {
+  border-color: var(--accent-color);
+  transition: border-color var(--transition-color);
+}
+.modal-form-message::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-check-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.modal-form-check {
+  position: absolute;
+  appearance: none;
+}
+.modal-form-check:checked + .modal-form-own-checkbox {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  transition: color var(--transition-color), background-color var(--transition-bgc);
+}
+.modal-form-check:checked + .modal-form-own-checkbox .modal-form-own-checkbox-icon {
+  display: block;
+}
+
+.modal-form-own-checkbox {
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--border-form-modal);
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.modal-form-own-checkbox .modal-form-own-checkbox-icon {
+  display: none;
+  fill: var(--icon-hover-color);
+}
+
+.consent {
+  text-decoration-line: underline;
+  color: var(--accent-color);
+}
+
+.modal-form-sumbit {
+  min-width: 200px;
+  height: 50px;
+  align-self: center;
+  padding: 10px 52px;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.33;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--secondary-text-color-light);
+  background: var(--background-modal-btn);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: color var(--transition-color), background-color var(--transition-bgc);
+}
+.modal-form-sumbit:hover, .modal-form-sumbit:focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color-light);
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  border: 1px solid var(--border-form-modal);
 }
 
 .social-list {
@@ -543,18 +755,7 @@ body {
   color: var(--secondary-text-color-dark);
 }
 
-.client {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-  .client {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
-.clients-menu {
+.clients {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -562,7 +763,21 @@ body {
   gap: 30px;
 }
 
-.clients-menu__link {
+.clients__item {
+  width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: 170px;
+  }
+}
+
+.clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -573,27 +788,12 @@ body {
   background-color: var(--background-basic);
   transition: color var(--transition-color);
 }
-.clients-menu__link:hover, .clients-menu__link:focus {
+.clients__link:hover, .clients__link:focus {
   color: var(--accent-color-icon);
   border-color: var(--accent-color-icon);
 }
-@media screen and (min-width: 480px) {
-  .clients-menu__link {
-    width: 210px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .clients-menu__link {
-    width: 226px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .clients-menu__link {
-    width: 170px;
-  }
-}
 
-.clients-menu__icon {
+.clients__icon {
   fill: currentColor;
 }
 
