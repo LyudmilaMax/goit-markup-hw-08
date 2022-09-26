@@ -22,9 +22,15 @@
 }
 
 .secondary-title {
-  font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  font-size: 28px;
   color: var(--main-text-color-dark);
   margin-bottom: 50px;
+
+ @media screen and (min-width: 1200px) {
+  font-size: 36px;
+    
+ }
 }
+

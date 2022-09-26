@@ -5,21 +5,23 @@
 @import "./base/section";
 @import "./base/container";
 
-@import "./components/logo";
+// @import "./components/logo";
 @import "./components/title.scss";
-@import "./components/backdrop";
-@import "./components/mobile-menu";
-@import "./components/modal-btn-window";
-@import "./components/modal-btn-form";
-@import "./components/social-network-list";
-@import "./components/footer-form";
+// @import "./components/backdrop";
+// @import "./components/mobile-menu";
+// @import "./components/modal-window";
+@import "./components/button";
 
-@import "./layout/header";
+// @import "./components/modal-btn-form";
+@import "./components/social-network-list";
+// @import "./components/footer-form";
+
+// @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/benefits-list";
 @import "./layout/work-list";
 @import "./layout/team-list";
 @import "./layout/clients-list";
-@import "./layout/portfolio-btn";
-@import "./layout/portfolio-card";
-@import "./layout/footer";
+
+// @import "./layout/portfolio";
+// @import "./layout/footer";
