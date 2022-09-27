@@ -1052,6 +1052,10 @@ body {
   }
 }
 
+.portfolio-card__img {
+  width: 100%;
+}
+
 .portfolio-card__bgc {
   background: var(--background);
 }
