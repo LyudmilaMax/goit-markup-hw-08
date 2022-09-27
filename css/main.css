@@ -199,6 +199,7 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  z-index: 100;
   background-color: var(--background-basic);
   transition: opacity var(--transition-color), visibility var(--transition-color);
 }
@@ -1033,6 +1034,22 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio-card__item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-card__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-card__item {
+    width: 270px;
+  }
 }
 
 .portfolio-card__bgc {
