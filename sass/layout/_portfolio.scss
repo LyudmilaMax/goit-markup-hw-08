@@ -1,6 +1,7 @@
 .portfolio-btn {
   display: flex;
   flex-wrap: wrap;
+  
   column-gap: 8px;
   row-gap: 15px;
 
@@ -31,12 +32,12 @@
   background: var(--background);
 }
 
-.portfolio-btn {
-  display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
-  column-gap: 8px;
-}
+// .portfolio-btn {
+//   display: flex;
+//   margin-bottom: 50px;
+//   justify-content: center;
+//   column-gap: 8px;
+// }
 
 .card {
   padding: 24px 20px 24px 20px;

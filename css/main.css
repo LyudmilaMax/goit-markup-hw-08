@@ -1039,13 +1039,6 @@ body {
   background: var(--background);
 }
 
-.portfolio-btn {
-  display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
-  column-gap: 8px;
-}
-
 .card {
   padding: 24px 20px 24px 20px;
   background: var(--background-basic);
