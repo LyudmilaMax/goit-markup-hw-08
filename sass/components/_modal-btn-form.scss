@@ -12,6 +12,7 @@
 .modal-form {
   display: flex;
   flex-direction: column;
+  
 }
 
 .modal-form-input {
@@ -87,17 +88,20 @@
 .modal-form-check-field {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 30px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  
+
   @media screen and (min-width: 1200px) {
+  
     font-size: 14px;
     line-height: 1.71;
-  }
 }
+}
+
 
 .modal-form-check {
   position: absolute;

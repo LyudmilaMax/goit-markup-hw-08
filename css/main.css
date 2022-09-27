@@ -459,6 +459,7 @@ body {
 .modal-form-check-field {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 30px;
   font-size: 12px;
