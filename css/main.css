@@ -128,10 +128,17 @@ body {
   color: #000000;
   text-align: center;
 }
-.logo .logo__part-web {
+@media screen and (min-width: 1200px) {
+  .logo {
+    text-align: left;
+  }
+}
+
+.logo__part-web {
   color: var(--accent-color);
 }
-.logo .logo__part-studio {
+
+.logo__part-studio {
   color: var(--secondary-text-color-light);
 }
 
