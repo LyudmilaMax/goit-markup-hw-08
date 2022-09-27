@@ -128,11 +128,6 @@ body {
   color: #000000;
   text-align: center;
 }
-@media screen and (min-width: 1200px) {
-  .logo {
-    text-align: left;
-  }
-}
 
 .logo__part-web {
   color: var(--accent-color);
@@ -1055,7 +1050,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .portfolio-card__item {
-    width: 270px;
+    width: 370px;
   }
 }
 
@@ -1126,12 +1121,17 @@ body {
 }
 
 .peage-footer {
-  text-align: center;
   line-height: 1.71;
   background: var(--background-footer);
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
   color: var(--secondary-text-color-light);
+}
+@media screen and (min-width: 1200px) {
+  .peage-footer {
+    text-align: left;
+  }
 }
 
 .footer-address {
