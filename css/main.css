@@ -461,6 +461,15 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-check-field {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form-check {
@@ -1062,13 +1071,6 @@ body {
   background: var(--background);
 }
 
-.card {
-  padding: 24px 20px 24px 20px;
-  background: var(--background-basic);
-  border-top: none;
-  border: 1px solid var(--boorder-color-card);
-}
-
 .portfolio-card__link {
   display: block;
 }
@@ -1099,7 +1101,7 @@ body {
   transition: transform var(--transition-bgc);
 }
 
-.portfolio-card__block {
+.portfolio-card__discription {
   padding: 24px 20px 24px 20px;
   background: var(--background-basic);
   border-top: none;

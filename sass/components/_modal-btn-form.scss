@@ -89,6 +89,14 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form-check {
@@ -108,18 +116,17 @@
 }
 
 .modal-form-own-checkbox {
-    width: 16px;
-    height: 15px;
-    border: 1px solid var(--border-form-modal);
-    border-radius: 2px;
-    cursor: pointer;
-    margin-right: 10px;
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--border-form-modal);
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 10px;
 
-    .modal-form-own-checkbox-icon {
-        display: none;
-        fill: var(--icon-hover-color);
-    }
-
+  .modal-form-own-checkbox-icon {
+    display: none;
+    fill: var(--icon-hover-color);
+  }
 }
 
 .consent {

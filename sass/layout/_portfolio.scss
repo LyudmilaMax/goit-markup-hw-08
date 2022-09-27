@@ -50,15 +50,14 @@
 }
 
 
-.card {
-  padding: 24px 20px 24px 20px;
-  background: var(--background-basic);
-  border-top: none;
-  border: 1px solid var(--boorder-color-card);
-}
-
 .portfolio-card__link {
-  display: block;
+    display: block;
+//   display: flex;
+//   direction: column;
+
+// @media screen and (min-width: 768px) {
+//     display: flex;
+// }
 
   &:hover,
   &:focus {
@@ -94,11 +93,13 @@
   }
 }
 
-.portfolio-card__block {
+.portfolio-card__discription {
   padding: 24px 20px 24px 20px;
   background: var(--background-basic);
   border-top: none;
   border: 1px solid var(--boorder-color-card);
+//   margin-bottom: auto;
+//   flex-grow: 1;
 }
 
 .portfolio-card__title {
