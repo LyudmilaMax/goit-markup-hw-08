@@ -127,6 +127,7 @@ body {
   line-height: 1.19;
   color: #000000;
   text-align: center;
+  margin-right: 93px;
 }
 
 .logo__part-web {
@@ -151,7 +152,7 @@ body {
 }
 @media screen and (max-width: 1199px) {
   .hero-title {
-    width: 360px;
+    width: 320px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -653,7 +654,6 @@ body {
 .page-header__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .menu__list {
@@ -693,6 +693,7 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    margin: auto;
   }
   .menu__link {
     display: block;
@@ -712,8 +713,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-left: auto;
   }
   .contacts__link {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
