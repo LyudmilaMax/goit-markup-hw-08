@@ -127,7 +127,6 @@ body {
   line-height: 1.19;
   color: #000000;
   text-align: center;
-  margin-right: 93px;
 }
 
 .logo__part-web {
@@ -136,6 +135,10 @@ body {
 
 .logo__part-studio {
   color: var(--secondary-text-color-light);
+}
+
+.logo-header {
+  margin-right: 93px;
 }
 
 .hero-title {
@@ -237,7 +240,6 @@ body {
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  margin-bottom: 306px;
 }
 .mobile-nav__list .mobile-nav__link {
   color: var(--main-text-color-dark);

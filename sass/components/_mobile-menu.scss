@@ -11,7 +11,7 @@
   background-color: var(--background-basic);
 
   transition: opacity var(--transition-color),
-    visibility var(--transition-color);
+  visibility var(--transition-color);
 }
 
 .mobile-menu.is-open {
@@ -45,8 +45,7 @@
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  margin-bottom: 306px;
-
+  
   .mobile-nav__link {
     color: var(--main-text-color-dark);
   }
