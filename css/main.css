@@ -219,6 +219,8 @@ body {
 .mobile-menu__container {
   position: relative;
   padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile-menu__close-btn {
@@ -235,16 +237,16 @@ body {
   fill: var(--accent-color);
 }
 
-.mobile-nav__list {
+.mobile-menu__list {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
 }
-.mobile-nav__list .mobile-nav__link {
+.mobile-menu__list .mobile-menu__link {
   color: var(--main-text-color-dark);
 }
-.mobile-nav__list li + li {
+.mobile-menu__list li + li {
   margin-top: 32px;
 }
 
@@ -677,7 +679,7 @@ body {
   margin-bottom: 10px;
 }
 
-.mobile-nav__list .current {
+.mobile-menu__list .current {
   color: var(--accent-color);
 }
 

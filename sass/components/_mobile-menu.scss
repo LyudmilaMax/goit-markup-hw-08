@@ -24,6 +24,8 @@
 .mobile-menu__container {
   position: relative;
   padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
 }
 .mobile-menu__close-btn {
   position: absolute;
@@ -40,13 +42,13 @@
     fill: var(--accent-color);
   }
 }
-.mobile-nav__list {
+.mobile-menu__list {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   
-  .mobile-nav__link {
+  .mobile-menu__link {
     color: var(--main-text-color-dark);
   }
   li + li {
