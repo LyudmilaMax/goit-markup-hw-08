@@ -50,6 +50,7 @@
   .general-footer__container {
     display: flex;
     justify-content: center;
+    align-items: baseline;
     gap: 165px;
     margin-bottom: 60px;
   }
@@ -62,13 +63,12 @@
 @media screen and (min-width: 1200px) {
   .general-footer {
     display: flex;
-    align-items: baseline;
+  
   }
 
   .general-footer__container {
     display: flex;
-    // justify-content: center;
-    gap: 70px;
+     gap: 70px;
     align-items: baseline;
     margin-bottom: 0;
   }
@@ -80,10 +80,6 @@
   .footer-address__item:not(:last-child) {
     margin-bottom: 9px;
   }
-
-  // .contacts-footer {
-  //   margin-right: 70px;
-  // }
 
   .footer__title {
     margin-top: 0;

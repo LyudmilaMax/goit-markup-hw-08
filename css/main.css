@@ -1183,6 +1183,7 @@ body {
   .general-footer__container {
     display: flex;
     justify-content: center;
+    align-items: baseline;
     gap: 165px;
     margin-bottom: 60px;
   }
@@ -1193,7 +1194,6 @@ body {
 @media screen and (min-width: 1200px) {
   .general-footer {
     display: flex;
-    align-items: baseline;
   }
   .general-footer__container {
     display: flex;
